@@ -1,0 +1,53 @@
+.factor-parallax {
+    display: inline-block;
+    width: 100%;
+    padding: $pd-4 0;
+    height: auto;
+    background-image: url("../img/7.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    .container {
+        padding-top: $pd-4;
+    }
+    .col-md-4 {
+        padding-left: $pd-3;
+        padding-right: $pd-3;
+        .fun-factor .icon {
+            float: left;
+            margin-top: $mg-1;
+            .fa {
+                font-size: $fs-4 - 4;
+                color: $color-white-0;
+            }
+        }
+    }
+    .fun-factor .info {
+        position: relative;
+        padding-left: $pd-4;
+        h1 {
+            margin-bottom: 0;
+            margin: 0 0 30px 0;
+            @include styleText($color-white-0, $fs-4 - 4, $fw-normal);
+            line-height: 1.5;
+        }
+        span {
+            display: block;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            line-height: 1.5;
+            color: $color-white-0;
+        }
+    }
+    .fun-factor .info::before{
+        background: $color-white-0;
+        position: absolute;
+        top: 0;
+        left: 75px;
+        width: 1px;
+        height: 80px;
+        transform: rotate(30deg);
+        content: "";
+    }
+}

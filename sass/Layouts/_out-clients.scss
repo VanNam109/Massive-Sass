@@ -1,0 +1,35 @@
+
+.out-clients .col-md-12{
+    padding-left: $pd-3;
+    padding-right: $pd-3;
+}
+.out-clients{
+    display: inline-block;
+    width: 100%;
+    padding: $pd-4 0;
+}
+.out-clients .heading-title{
+    margin-bottom: $mg-4;
+}
+.out-clients .heading-title h3{
+    letter-spacing: 2px;
+    line-height:  1.5;
+    margin: 0 0 $pd-3 0;
+}
+.out-clients .heading-title p{
+    display: inline-block;
+    width: 60%;
+    margin: 0 auto;
+    color: $color-gray-6;
+    line-height: 25px;
+    padding-top: $pd-3;
+}
+
+#clients- .item{
+    margin: $mg-2;
+}
+#clients-1 .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}

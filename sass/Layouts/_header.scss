@@ -1,0 +1,76 @@
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
+    .header-content {
+        .container-fluid {
+            padding-right: $pd-3;
+            padding-left: $pd-3;
+            .navbar {
+                position: relative;
+                float: left;
+                width: 100%;
+                padding: 0;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                background: none;
+                // logo
+                a{
+                    float: left;
+                    color: $color-black-6;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                a img {
+                    height: 96px;
+                    width: auto;
+                    position: relative;
+                    top: -2px;
+                    display: inline-block;
+                    max-height: 100%;
+                    padding: $pd-0 - 3 0;
+                }
+                //Menu
+                #navbarNav {
+                    .navbar-nav {
+                        max-height: 400px;
+                        .nav-item {
+                            .nav-link {
+                                @include styleText($color-black-1, $fs-1, $fw-normal);
+                                padding: 0 $pd-1;
+                                transition: all 0.5s;
+                                &:hover {
+                                    color: $color-yellow;
+                                }
+                            }
+                        }
+                        .active > .nav-link {
+                            color: $color-yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("large") {
+    .navbar-nav {
+        background-color: #fff;
+    }
+    .navbar-nav > .nav-item {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    .navbar-nav > .nav-item:first-child > .nav-link {
+        border-top: 1px solid $color-gray-2;
+    }
+    .navbar-nav > .nav-item > .nav-link {
+        padding: 12px 20px !important;
+        line-height: 20px;
+        display: block;
+        width: 100%;
+        border-bottom: solid 1px #f0f0f0;
+    }
+}

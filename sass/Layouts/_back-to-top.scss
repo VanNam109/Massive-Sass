@@ -1,0 +1,21 @@
+.backToTop i {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s;
+    text-align: center;
+    color: #fff;
+    background: $color-black-4;
+    line-height: 40px;
+    text-decoration: none;
+}
+.backToTop {
+    opacity: 0;
+    visibility: hidden;
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}

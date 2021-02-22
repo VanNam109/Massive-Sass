@@ -1,0 +1,54 @@
+.parallax-14 {
+    background-image: url("../img/14.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.side-object .object,
+.side-object .content {
+    float: left;
+}
+.side-object .object {
+    position: relative;
+    width: 30%;
+    height: 400px;
+    margin-top: $mg-4;
+}
+.side-object .object img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.side-object .content {
+    width: 70%;
+    padding: $pd-4 + 100 0 0 $pd-4;
+    text-align: left;
+    .theme-color {
+        color: $color-yellow !important;
+    }
+    .btn {
+        display: inline-block;
+        margin-right: $mg-2 - 5;
+        padding: $pd-1;
+        letter-spacing: 1px;
+        line-height: 1.42857143;
+        text-transform: uppercase;
+        border: 1px solid $color-trans;
+        border-radius: 0;
+        border-radius: 4px;
+        color: $color-white-0;
+        cursor: pointer;
+        background-color: $color-black-1;
+        font-size: $fs-1;
+        &:hover {
+            color: $color-white-0;
+            background-color: $color-yellow;
+        }
+    }
+}
+#carousel-object .owl-dots {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}

@@ -1,0 +1,27 @@
+.parallax-15 {
+    background-image: url("../img/15.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: $pd-4 + 50 0;
+    .col-md-4 {
+        padding-left: $pd-3;
+        padding-right: $pd-3;
+    }
+}
+.parallax-15 .featured-item {
+    .icon {
+        padding: 0 0 $pd-3 0;
+        font-size: $fs-4 - 4;
+        color: $color-white-0;
+    }
+    .title h4 {
+        margin-bottom: $mg-2;
+        margin: 0 0 $mg-3 0;
+        letter-spacing: 1px;
+        font-weight: normal;
+        line-height: 1.5;
+        font-size: $fs-0 + 3;
+    }
+}

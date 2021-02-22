@@ -1,0 +1,38 @@
+.promo{
+    position: relative;
+    padding: $pd-3 + 30 0;
+    background-color: $color-black-2;
+}
+.promo-info {
+    padding-right: $pd-4 + 100 ;
+}
+.promo-info span {
+    display: block;
+}
+.theme-color {
+    color: #d6b161 !important;
+}
+.full-width.promo-box .promo-btn {
+    right: 0;
+}
+.promo-btn {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    margin-top: -28px;
+    color: $color-white-0;
+    background-color: $color-black-0;
+}
+.promo-btn a.btn, .promo a.btn {
+    padding: $pd-2 - 5 $pd-3;
+}
+.promo-btn a.btn{
+    transition: all 0.5s;
+    &:hover{
+        cursor: pointer;
+        background-color: $color-yellow;
+    }
+}
+.btn-rounded {
+    border-radius: 4px;
+}

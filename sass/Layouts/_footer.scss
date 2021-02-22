@@ -1,0 +1,41 @@
+#footer.gray {
+    padding: $pd-4 - 20 0;
+    background: $color-gray-9;
+}
+#footer.gray .sub-title {
+    margin: $mg-1 + 5 0;
+    letter-spacing: 2px;
+    color: $color-black-0;
+    font-size: $fs-0 - 1;
+}
+#footer .social-link a {
+    display: inline-block;
+    margin: $mg-1;
+    color: $color-black-2;
+    font-size: $fs-2;
+    transition: all 0.3s;
+    &:hover{
+        background-color: $color-black-2;
+        color: $color-white-0;
+    }
+}
+#footer .social-link {
+    margin: $mg-4 - 20 0 $mg-4 - 20 0;
+}
+#footer.gray .social-link.circle a {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid $color-black-2;
+    border-radius: 50%;
+    line-height: 40px;
+}
+#footer.gray .copyright {
+    letter-spacing: 2px;
+    color: $color-black-0;
+    font-size: $fs-0 - 1;
+}
+#footer.gray .copyright-sub-title {
+    letter-spacing: 2px;
+    font-size: $fs-1 - 1;
+}

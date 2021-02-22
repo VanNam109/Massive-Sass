@@ -1,0 +1,32 @@
+//Helpers
+@import "./Helpers/variables";
+@import "./Helpers/mixin";
+
+//Vendor
+@import "./Vendor/popup/settings";
+@import "./Vendor/popup/main.scss";
+//Base
+@import "./Base/reset";
+// Layouts
+@import "./Layouts/header";
+@import "./Layouts/carousel";
+@import "./Layouts/design";
+@import "./Layouts/skill";
+@import "./Layouts/team";
+@import "./Layouts/portfolio";
+@import "./Layouts/promo";
+@import "./Layouts/services";
+@import "./Layouts/testimonial";
+@import "./Layouts/feature";
+@import "./Layouts/factor";
+@import "./Layouts/blog";
+@import "./Layouts/comment";
+@import "./Layouts/video";
+@import "./Layouts/img-post";
+@import "./Layouts/price";
+@import "./Layouts/purchare";
+@import "./Layouts/out-clients";
+@import "./Layouts/contact";
+@import "./Layouts/drop-us";
+@import "./Layouts/footer";
+@import "./Layouts/back-to-top";

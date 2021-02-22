@@ -1,0 +1,80 @@
+.carousel {
+    .carousel .slide,
+    .carousel-inner {
+        position: relative;
+    }
+    .full-width {
+        position: relative;
+        width: 100%;
+    }
+    .carousel-indicators {
+        z-index: 1200;
+        left: 50%;
+        width: 60%;
+        margin-left: -30%;
+        text-align: center;
+    }
+    .carousel-indicators li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: $mg-0 + 2;
+        cursor: pointer;
+        background-color: $color-black-0;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid $color-white-0;
+        border-radius: 10px;
+    }
+    .carousel-indicators .active {
+        width: 12px;
+        height: 12px;
+        margin: $mg-0 + 1;
+        background: $color-white-0;
+    }
+    .carousel-inner .carousel-item .carousel-caption {
+        position: absolute;
+        top: 40%;
+        left: 12%;
+        right: 0;
+        bottom: 0;
+        text-align: left;
+        h1 {
+            span {
+                font-size: 18px;
+            }
+            letter-spacing: 2px;
+            @include styleText($color-black-0, $fs-4 - 4, $fw-normal);
+            margin: 0 0 $mg-3 0;
+            line-height: 1.5;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        p {
+            color: $color-gray-6;
+            margin: 0 0 $mg-3 0;
+            line-height: $mg-3;
+        }
+        .txt-white {
+            color: $color-white-0;
+        }
+    }
+
+    //prew-next
+    .carousel-control-prev {
+        &:hover {
+            cursor: url("../img/arrow_left.png"), auto;
+        }
+    }
+    .carousel-control-next {
+        &:hover {
+            cursor: url("../img/arrow_right.png"), auto;
+        }
+    }
+}
+
+@include responsive("small") {
+    .carousel .carousel-inner img{
+        height: 100vh;
+    }
+    
+}

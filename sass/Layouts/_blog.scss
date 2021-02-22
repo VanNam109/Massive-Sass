@@ -1,0 +1,149 @@
+.blog {
+    display: inline-block;
+    width: 100%;
+    padding: $pd-4 0;
+    .blog-title {
+        margin-bottom: $mg-4;
+        h3 {
+            letter-spacing: 2px;
+            margin: 0 0 $mg-3 0;
+            @include styleText($color-black-0, $fs-2 + 4, $fw-normal);
+        }
+        .blog-text {
+            padding-top: $pd-3;
+            display: inline-block;
+            width: 60%;
+            margin: 0 auto;
+            line-height: 25px;
+            @include styleText($color-gray-6, $fs-0, $fw-normal);
+        }
+    }
+    .row {
+        .col-md-4 {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .post-single .post-img {
+            width: 100%;
+            height: 309px;
+            position: relative;
+        }
+        .post-single .post-img img {
+            width: 100%;
+            height: 100%;
+        }
+        .post-single .post-img.bottom::after {
+            position: absolute;
+            left: 50%;
+            display: block;
+            width: 15px;
+            height: 14px;
+            margin-left: -7px;
+            content: "";
+            transform: rotate(45deg);
+            border-style: none;
+            border-color: #fff;
+            border-right: 1px solid #fff;
+            background-color: #fff;
+        }
+        .post-single .post-img.bottom::after {
+            bottom: -7px;
+        }
+        .post-single .post-desk {
+            height: 309px;
+            padding: 40px;
+            position: relative;
+        }
+        .post-single .post-desk .mid-align {
+            position: absolute;
+            top: 50%;
+            padding-right: 40px;
+            transform: translate(0, -50%);
+        }
+        .post-single .post-desk .date {
+            float: left;
+            width: 100%;
+            height: auto;
+            margin-right: 0;
+            margin-bottom: 25px;
+            padding-top: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: transparent;
+            background: none;
+            font-size: 14px;
+        }
+        .post-single .post-desk .date {
+            position: relative;
+        }
+        .post-single .post-desk .date:after {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 60px;
+            height: 1px;
+            content: "";
+            background: $color-black-0;
+        }
+        .post-single .post-desk h4 {
+            letter-spacing: 1px;
+            line-height: 1.5;
+            @include styleText($color-black-0, $fs-2 - 2, $fw-normal);
+        }
+        .post-single .post-desk h4 a {
+            background-color: $color-trans;
+            text-decoration: none;
+            color: $color-black-0;
+            transition: all .3s;
+            &:hover{
+                color: $color-yellow;
+            }
+        }
+        .post-single .post-desk .post-cat {
+            padding: 0;
+            list-style: none;
+            ul {
+                margin-top: 0;
+                margin-bottom: $mg-1;
+            }
+        }
+        .post-single .post-desk .post-cat li {
+            display: inline-block;
+            margin-right: $mg-1;
+            a {
+                text-transform: uppercase;
+                color: $color-gray-2;
+                font-size: $fs-1 - 1;
+                background-color: $color-trans;
+                text-decoration: none;
+                transition: all .3s;
+                &:hover{
+                    color: $color-yellow;
+                }
+            }
+        }
+        .post-single .post-desk .post-cat li a::after {
+            content: ",";
+        }
+    }
+    .btn {
+        margin-top: $mg-3 + 20;
+    }
+    .btn .p-read-more {
+        position: relative;
+        text-transform: uppercase;
+        color: $color-gray-10;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: all 0.3s;
+        &:hover {
+            color: $color-black-2;
+        }
+    }
+    .btn .p-read-more i {
+        position: absolute;
+        top: 2px;
+        margin-left: $mg-1;
+        @include styleText($color-gray-10, $fs-0, $fw-bold);
+    }
+}

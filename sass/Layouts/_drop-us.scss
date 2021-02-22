@@ -1,0 +1,50 @@
+.drop-us {
+    display: inline-block;
+    width: 100%;
+    padding: $pd-4 0;
+}
+.drop-us .drop-title {
+    margin-bottom: $mg-4;
+}
+.drop-us .drop-title .text {
+    display: inline-block;
+    width: 60%;
+    margin: 0 auto;
+    color: $color-gray-6;
+    line-height: 25px;
+    padding-top: $pd-3;
+}
+.drop-us .form-group {
+    margin-bottom: $pd-1 + 5;
+}
+.drop-us {
+    .contact-comments .form-control {
+        height: 40px;
+        border-radius: 0;
+        border: 1px solid $color-gray-13;
+        box-shadow: none;
+    }
+    .contact-comments .cmnt-text {
+        height: 95px;
+    }
+    .contact-comments .full-width {
+        position: relative;
+        width: 100%;
+        button.btn {
+            width: 100%;
+        }
+        .btn {
+            background-color: $color-black-0;
+            color: $color-white-0;
+            padding: $pd-1 $pd-2;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: $fs-1;
+            transition:  all 0.3s;
+            &:hover{
+                background-color: $color-yellow;
+                border: 1px solid $color-black-0;
+            }
+        }
+    }
+}

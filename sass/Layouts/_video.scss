@@ -1,0 +1,20 @@
+.video {
+    display: inline-block;
+    width: 100%;
+    padding: $pd-4 0;
+    .video-title {
+        margin-bottom: $mg-4;
+        h3 {
+            margin: 0 0 $mg-3 0;
+            @include styleText($color-black-0, $fs-2 + 4, $fw-normal);
+            line-height: 1.5;
+        }
+        .text{
+            display: inline-block;
+            width: 60%;
+            margin: 0 auto;
+            color: $color-gray-6;
+            line-height: 25px;
+        }
+    }
+}

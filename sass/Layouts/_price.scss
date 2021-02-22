@@ -1,0 +1,99 @@
+.price {
+    display: inline-block;
+    width: 100%;
+    padding: $pd-4 0;
+    .price-title {
+        margin-bottom: $mg-4;
+        h3 {
+            letter-spacing: 2px;
+            @include styleText($color-black-1, $fs-2 + 4, $fw-normal);
+            line-height: 1.5;
+            margin: 0 0 $mg-3 0;
+        }
+        .text {
+            padding-top: $pd-3;
+            display: inline-block;
+            width: 60%;
+            margin: 0 auto;
+            color: $color-gray-6;
+            line-height: 25px;
+        }
+    }
+    .price-col {
+        padding: $pd-3 + 20;
+        text-align: center;
+        border: 1px solid $color-gray-3;
+        background: #fff;
+        transition: all .3s;
+        h1 {
+            margin-bottom: $mg-3;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 30px 0;
+            line-height: 1.5;
+            @include styleText($color-black-1, $fs-0 + 1, $fw-normal);
+        }
+        .p-value {
+            margin-bottom: 40px;
+            padding: 25px 0;
+            border-top: 1px solid $color-gray-11;
+            border-bottom: 1px solid $color-gray-11;
+        }
+    }
+    .price-col .dollar ,.price-col.feature .dollar {
+        font-size: $fs-4 + 2;
+        font-weight: normal;
+        span {
+            margin-left: -$mg-1;
+            font-size: $fs-0 + 1;
+        }
+    }
+    .price-col .p-value .duration {
+        text-transform: uppercase;
+        font-size: $fs-1 - 1;
+    }
+    .price-col ul {
+        display: block;
+        margin-bottom: $mg-3 + 10;
+        padding: 0;
+        list-style: none;
+    }
+    .price-col ul li {
+        color: $color-gray-12;
+        margin-bottom: $mg-1 + 5;
+    }
+    .price-col .p-btn {
+        display: inline-block;
+        display: inherit;
+        padding: $pd-1 + 5 $pd-2;
+        text-transform: uppercase;
+        color: $color-black-2;
+        border: 1px solid $color-gray-3;
+        font-weight: $fw-normal;
+        text-decoration: none;
+        transition: all 0.3;
+        &:hover {
+            background-color: $color-black-0;
+            color: $color-white-0;
+        }
+    }
+    .price-col.feature {
+        border: 1px solid $color-black-2;
+        background: $color-black-2;
+        h1 {
+            color: $color-yellow;
+        }
+    }
+    .price-col.feature{
+       color: $color-white-0;
+    }
+    .price-col.feature .p-btn {
+        color: $color-black-2;
+        background: $color-white-0;
+        transition: all .3s;
+        &:hover{
+            background: $color-yellow;
+            color: $color-white-0;
+        }
+    }
+}
